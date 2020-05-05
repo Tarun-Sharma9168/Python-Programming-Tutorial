@@ -5,7 +5,7 @@
          ######  ###   #             #   ####   # 
                                  #####   ####   #
    Author name :      Tarun Sharma 
-   Problem Statement: 
+   Problem Statement: Finding the Product of all elements in a list...
 
 '''
 
