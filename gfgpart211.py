@@ -24,12 +24,13 @@ sys.stdin =open('input.txt','r')
 #sys.stdout=open('output.txt','w')
 #Code Section
 def generate_random_str1ing(str1):
-
+    #these constants defined in string directly 
     possible_string=string.ascii_lowercase+string.digits+string.ascii_uppercase + '., !?;:'
         
         # To take input from user 
     # t = input(str1("Enter your target text: ")) 
     #make some random string of length of string given in the function
+    #random choice is a good option to choose a random letter from the string
     attemptThis = ''.join(random.choice(possible_string) for i in range(len(str1))) 
     attemptNext = '' 
     
@@ -55,7 +56,8 @@ def generate_random_str1ing(str1):
         # increment the iteration  
         iteration += 1
         attemptThis = attemptNext 
-        time.sleep(0.1) 
+        #time.sleep is just to give some some time after every output.
+        time.sleep(1) #1 means 1 second time lag
     
     # Driver Code 
     print("Target matched after " +str(iteration) + " iterations") 
